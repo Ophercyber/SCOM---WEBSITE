@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+ 
+    <!--Login Form-->
+    <div class="login">
+        <div class="SweetHomeLogo"><img src="/Media/scomLogo.jpeg" alt="" width="245" height="145" >  </div>
+        
+            <form class="section">
+                <p class="email"><input type="text" id="emain" name="email" placeholder="Enter your email" required></p>
+               <p class="password"><input type="password" id="password" name="password" placeholder="Enter password" required></p> 
+               <p>Forgot Password?</p>
+                <p><button type="submit" onclick="window.location.href='index.html'" >Login</button></p>
+               <a href="#" onclick="shownewAccount()" >Don't have an account? Register</a>
+ 
+            </form>
+    </div>
+    <!--Signup Form-->
+    <div class="newAccount">
+        <div class="SweetHomeLogo"><img src="/Media/scom.png" alt="" width="110" height="100" >  </div>
+        
+            <form class="auth-form">
+                <p> <h2>Create Account</h2> </p>
+                 <input class="username" type="text" id="username" name="username" placeholder="Enter your username" required>
+                <input type="email" id="emain" name="email" placeholder="Enter your email" required>
+                <input type="password" id="password" name="password" placeholder="Enter password" required>
+                <p><button type="submit">Login</button></p>
+                <p class ="login" ><a href="#" onclick="showlogin()" class="newAccount">Don't have an account?</a></p>
+ 
+            </form>
+    </div>
+    <!--login-css-->
+    <style>
+   
+        body{
+         background-image: url("/Media/theme.webp");
+         background-size: cover;
+         background-repeat: no-repeat;
+         margin: 0%;
+         padding: 0%;
+         width: 100%;
+         min-height: 100vh;
+       
+         
+        }
+      
+     
+       .SweetHomeLogo{
+    position: absolute;
+    top: 50px;
+    left: 120px;
+
+        }
+        .login{
+            background: linear-gradient(135deg, rgb(81, 80, 80) 0%, #830000 100%);
+            width: 500px;
+            height: 600px;
+            position: absolute;
+            top: 25%;
+            left: 40%;
+            border-radius: 10%;
+            box-shadow:15px 15px 15px 15px grey;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+           
+                }
+        .username{
+            width: 100%;
+            padding: 12px;
+        }
+        .section{
+            position: absolute;
+            top:200px ;
+            left:155px ;
+        }
+        .email{
+            font-family:'Times New Roman', Times, serif
+        }
+        button{
+            margin: 10px;
+            border-radius: 25px;
+            border: 1px solid rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
+            width: 250px;
+            height: 50px;
+            font-size: 15px;
+            position: absolute;
+            top:150px ;
+            left:-45px;
+        }
+        button:hover{
+            border: 1px solid rgb(61, 61, 62);
+            background-color: rgb(113, 113, 115);
+        }
+        .newAccount{
+            display: none;
+        }
+        .signup{
+            position: absolute;
+            top: 250px;
+            left:-35px ;
+
+        }
+    </style>
+    <script>
+        function showlogin(){
+          const login = document.getElementsByClassName("login");
+            const newAccount = document.getElementsByClassName("newAccount");
+            if (login==="none"){
+                login.style.display="block";
+                newAccount.style.display="none";
+                
+            }
+        }
+        
+    </script>
+</body>
+</html>
