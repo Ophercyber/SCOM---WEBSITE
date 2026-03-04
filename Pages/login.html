@@ -8,30 +8,30 @@
 <body>
  
     <!--Login Form-->
-    <div class="login">
+   <div class="outer"> <div class="login">
         <div class="SweetHomeLogo"><img src="/Media/scomLogo.jpeg" alt="" width="245" height="145" >  </div>
         
-            <form class="section">
+            <form>
                 <p class="email"><input type="text" id="emain" name="email" placeholder="Enter your email" required></p>
                <p class="password"><input type="password" id="password" name="password" placeholder="Enter password" required></p> 
                <p>Forgot Password?</p>
-                <p><button type="submit" onclick="window.location.href='index.html'" >Login</button></p>
+                <p><button id ="logbtn" type="submit" >Login</button></p>
                <a href="#" onclick="shownewAccount()" >Don't have an account? Register</a>
  
             </form>
     </div>
+    </div>
     <!--Signup Form-->
-    <div class="newAccount">
-        <div class="SweetHomeLogo"><img src="/Media/scom.png" alt="" width="110" height="100" >  </div>
-        
+    <div class="newAccount">     
+
             <form class="auth-form">
+                <div class="SweetHomeLogo"><img src="/Media/scom.png" alt="" width="110" height="100" >  </div>
                 <p> <h2>Create Account</h2> </p>
                  <input class="username" type="text" id="username" name="username" placeholder="Enter your username" required>
                 <input type="email" id="emain" name="email" placeholder="Enter your email" required>
                 <input type="password" id="password" name="password" placeholder="Enter password" required>
                 <p><button type="submit">Login</button></p>
-                <p class ="login" ><a href="#" onclick="showlogin()" class="newAccount">Don't have an account?</a></p>
- 
+                <p class ="login" ><a href="#" onclick="showlogin()" class="newAccount">Don't have an account?</a></p>s
             </form>
     </div>
     <!--login-css-->
@@ -40,52 +40,50 @@
         body{
          background-image: url("/Media/theme.webp");
          background-size: cover;
-         background-repeat: no-repeat;
+         background-repeat: no-repeat;  
+         background-position: center;
          margin: 0%;
-         padding: 0%;
-         width: 100%;
-         min-height: 100vh;
-       
-         
-        }
-      
-     
+         height: 100vh;
+         display: grid;
+         place-items: center;
+        }     
        .SweetHomeLogo{
     position: absolute;
-    top: 50px;
-    left: 120px;
+    top: 10%;
+    left: 350px;
 
+        }
+          form{
+         text-align: center;
+            
+        }
+       input[type="password"], input[type="text"]{
+            width: 350px;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 19px;
+            text-align: center;
+            background-color: hsla(0, 0%, 0%, 0.6);
+            border-color: transparent;
         }
         .login{
             background: linear-gradient(135deg, rgb(81, 80, 80) 0%, #830000 100%);
-            width: 500px;
-            height: 600px;
-            position: absolute;
-            top: 25%;
-            left: 40%;
+            width: 550px;
+            height: 800px;
             border-radius: 10%;
-            box-shadow:15px 15px 15px 15px grey;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-           
-                }
+            align-content: center;
+            }
         .username{
             width: 100%;
             padding: 12px;
         }
-        .section{
-            position: absolute;
-            top:200px ;
-            left:155px ;
-        }
-        .email{
+              .email{
             font-family:'Times New Roman', Times, serif
         }
         button{
             margin: 10px;
             border-radius: 25px;
-            border: 1px solid rgb(0, 0, 0);
+            border: opx;
             background-color: rgb(255, 255, 255);
             width: 250px;
             height: 50px;
@@ -97,6 +95,7 @@
         button:hover{
             border: 1px solid rgb(61, 61, 62);
             background-color: rgb(113, 113, 115);
+        
         }
         .newAccount{
             display: none;
@@ -104,7 +103,7 @@
         .signup{
             position: absolute;
             top: 250px;
-            left:-35px ;
+            left:-35pxe;
 
         }
     </style>
@@ -117,6 +116,11 @@
                 newAccount.style.display="none";
                 
             }
+        }
+        function homepage(){
+            const btns = document.getElementById("logbtn");
+            const home = document.get
+
         }
         
     </script>

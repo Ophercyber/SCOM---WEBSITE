@@ -1,19 +1,22 @@
 
 .Heading{
     position: fixed;
-    top: 15px;
-    left: 37%;
+    text-align: center;
 }
 .head{
+    position: fixed;
+    top: -50px;
+    left:510px;
     font-size:60px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+.sub{
+    font-size:30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: fixed;
+    top: 95px;
+    left: 45%;
 
-body{
-    margin: 0%;
-    padding: 0%;
-    width: 100%;
-    min-height: 100vh;
 }
 .sidebar{
    
@@ -68,6 +71,10 @@ body{
     margin-top: 190px;
     margin-left: 5px;
     padding: 20px;
+    display: grid;
+    grid-template-columns:repeat(1s,2fr);
+    gap: 40px;
+    align-items:center;
 }
 .content.blur{
     filter: blur(4px);
@@ -107,9 +114,6 @@ width: 100%;
         left:85%;
     }
    
-    .time{
-        font-style: italic;
-    }
     a{
         color: black;
         font-weight: bold;
@@ -123,8 +127,7 @@ width: 100%;
         
     }
     .section-3{
-        position: absolute;
-        top: 1000px;
+       
     }
 footer{
     text-align: center;
@@ -135,16 +138,35 @@ footer{
     
 }
 .tl{
-border-radius: 10px;
 height: 70px;
 display: flex;
-gap: 20px;
+gap: 50px;
 justify-content: center;
 align-content: center;
-background-color:#d81313;
+}
+.location{
+border-radius: 10px;
+height: 70px;
+background-color:  hsl(0, 0%, 59%);
+width: 200px;
+text-align: center;
+box-shadow:0 10px 20px black;
+}
+.time{
+border-radius: 10px;
+height: 70px;
+background-color: hsl(0, 0%, 59%);
+width: 200px;
+text-align: center;
+box-shadow:0 10px 20px black;
 }
 body{
     background-image: url("/Media/theme.webp");
     background-repeat: none;
     background-size:cover;
+    background-attachment: scroll;
+    margin: 0%;
+    padding: 0%;
+    width: fit-content;
+    height: max-content;
 }
