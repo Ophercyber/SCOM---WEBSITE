@@ -29,12 +29,14 @@
     background-color: #ffffff;
     overflow-x: hidden;
     transition: 0.3s;
-    padding: 5px;
+    padding: 0px;
     position: fixed;
     top: 250px;
     border-radius: 25px;
     height: fit-content;
     text-align:center  ;
+    background-attachment: scroll;
+    margin: 0%;
     
 }
  .sidesec{
@@ -123,18 +125,19 @@ nav{
     z-index: 1000;
     align-items: center;
     height: 200px;
-width: 100%;
+    width: 100%
 
     }
     .notification{
-        position: fixed;
-        top:155px;
-        left:85%;
+      
         padding: 10px;
         background-color:white;
         border-radius: 10px;
         width: 100px;
         text-align: center;
+        position: fixed;
+        top: 12%;
+        left: 91.5%;
     }
    
     a{
@@ -156,6 +159,7 @@ footer{
     width: 100%; 
     padding: 0%;
     margin: 0%; 
+    border-radius: 25px;
 }
 .tl{
 height: 70px;
@@ -205,8 +209,7 @@ body{
     background-attachment: scroll;
     margin: 0%;
     padding: 0%;
-    width: fit-content;
-    height: max-content;
+    height: fit-content;
     display: grid;
     grid-template-columns: repeat(1s,1fr);
     gap: 50px;
