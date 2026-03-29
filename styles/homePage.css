@@ -53,9 +53,9 @@
     }
 .usersec{
     width: 100%;
-    background-color: grey;
+    background-color:grey;
      border-radius:25px ;
-     height: 120px;
+     height: 150px;
      display: flex;
      justify-content: center;
      align-items:center ;
@@ -70,7 +70,8 @@
 }
 
 .sidebar a:hover{
-    background-color: #ff0000;
+    background-color:red
+    ;
     border-radius: 25px;
 }
 #menubtn{
@@ -174,7 +175,7 @@ align-content: center;
 .location{
 border-radius: 10px;
 height: 70px;
-background-color:grey;
+background-color:red;
 width: 45%;
 text-align: center;
 box-shadow:0 10px 20px black;
@@ -185,7 +186,7 @@ box-shadow:0 10px 20px black;
 .time{
  border-radius: 10px;
 height: 70px;
-background-color:grey;
+background-color:red;
 width: 45%;
 text-align: center;
 box-shadow:0 10px 20px black;
