@@ -10,6 +10,5 @@ menubtn.onclick = function(){
 else{
     sidebar.style.width="300px";
     content.style.opacity="";
-
 }
-}
+} 
