@@ -4,8 +4,7 @@
     align-items: center;
 }
 .Heading{
-    position: fixed;
-       
+    position: fixed;       
 }
 .head{
     position: fixed;
@@ -20,7 +19,6 @@
     position: fixed;
     top: 95px;
     left: 39%;
-
 }
 .sidebar{
   display:flex;
